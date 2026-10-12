@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>电学公式 · 定义 · 单位 中英对照速查表 | AS Physics Electricity (9702 Ch 8–11)</title>
+<style>
+  :root{
+    --ink:#1a2330; --muted:#5d6d7e; --line:#d7dfe8; --bg:#f5f7fa;
+    --blue:#0d5c9c; --blue-soft:#e9f2fb; --red:#b93b2c; --red-soft:#fdeeeb;
+    --green:#17734a; --green-soft:#e9f7f0; --amber:#9a6a00; --amber-soft:#fff7e3;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:30px 18px 70px;background:var(--bg);color:var(--ink);
+       font:15.5px/1.6 "Segoe UI","Microsoft YaHei",system-ui,sans-serif}
+  main{max-width:1180px;margin:0 auto}
+  h1{font-size:27px;margin:0 0 4px;letter-spacing:-.2px}
+  .sub{color:var(--muted);margin:0 0 22px;font-size:14.5px}
+  h2{font-size:21px;margin:32px 0 10px;padding:9px 14px;background:var(--blue);color:#fff;border-radius:8px}
+  h3{font-size:17px;margin:20px 0 6px;color:var(--blue);border-left:4px solid var(--blue);padding-left:9px}
+  section{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:0 0 20px;
+          box-shadow:0 1px 2px rgba(20,40,60,.05)}
+  table{border-collapse:collapse;width:100%;margin:9px 0;font-size:14.5px}
+  th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+  th{background:var(--blue-soft);font-weight:600}
+  td.f,span.f{font-family:"Cambria Math",Cambria,Georgia,serif;font-size:16px;white-space:nowrap}
+  .f{background:#f0f5fa;padding:1px 5px;border-radius:4px}
+  ul,ol{margin:6px 0 6px 20px;padding:0}
+  li{margin:3px 0}
+  .box{border-radius:8px;padding:11px 15px;margin:11px 0;border-left:5px solid}
+  .trap{background:var(--red-soft);border-color:var(--red)}
+  .tip{background:var(--green-soft);border-color:var(--green)}
+  .warn{background:var(--amber-soft);border-color:var(--amber)}
+  .box b{display:block;margin-bottom:3px}
+  .en{color:var(--muted);font-style:italic}
+  .small{font-size:13.5px;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:860px){.grid{grid-template-columns:1fr}}
+  @media print{
+    body{background:#fff;padding:0;font-size:10.5pt}
+    section{box-shadow:none;break-inside:avoid}
+    h2{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>电学 公式 · 定义 · 单位 中英对照速查表</h1>
+<p class="sub">Electricity — Formulae, Definitions &amp; Units (Bilingual) ｜ Cambridge International AS Physics 9702 · Topics 8–11（Electricity / D.C. Circuits / Practical Circuits）<br>
+用途：背定义题（definition questions）、单位检查（unit check）、写公式分（formula marks）。带 ★ 的是考纲原句，定义题必须逐字对应。</p>
+
+<!-- ============ 0 ============ -->
+<h2>0 · 核心量总表 Core Quantities at a Glance</h2>
+<section>
+<table>
+<tr><th style="width:15%">量 Quantity</th><th style="width:9%">符号</th><th style="width:9%">单位 SI unit</th><th style="width:26%">定义 / 物理意义</th><th>公式 Formula</th></tr>
+<tr><td>电荷<br><span class="en">charge</span></td><td>Q</td><td>coulomb (C)</td><td>电荷量；由元电荷量子化<br><span class="en">quantised in units of e</span></td><td class="f">Q = It &nbsp;;&nbsp; Q = Ne</td></tr>
+<tr><td>电流<br><span class="en">current</span></td><td>I</td><td>ampere (A)</td><td>单位时间内通过某截面的电荷量<br><span class="en">rate of flow of charge</span></td><td class="f">I = ΔQ/Δt</td></tr>
+<tr><td>元电荷<br><span class="en">elementary charge</span></td><td>e</td><td>1.60×10⁻¹⁹ C</td><td>质子电荷 +e，电子电荷 −e</td><td class="f">Q = Ne</td></tr>
+<tr><td>电势差 / 电压<br><span class="en">potential difference</span></td><td>V</td><td>volt (V) = J C⁻¹</td><td>1 C 电荷从一点到另一点时，<b>电能转化为其他形式能</b>的量<br><span class="en">energy transferred from electrical to other forms per unit charge</span></td><td class="f">V = W/Q</td></tr>
+<tr><td>电动势<br><span class="en">electromotive force (e.m.f.)</span></td><td>E 或 ε</td><td>volt (V)</td><td>1 C 电荷通过电源时，<b>其他形式能转化为电能</b>的量<br><span class="en">energy transferred from other forms to electrical per unit charge</span></td><td class="f">E = W/Q</td></tr>
+<tr><td>电阻<br><span class="en">resistance</span></td><td>R</td><td>ohm (Ω) = V A⁻¹</td><td>V 与 I 之比<br><span class="en">ratio of p.d. across to current in a component</span></td><td class="f">R = V/I</td></tr>
+<tr><td>电阻率<br><span class="en">resistivity</span></td><td>ρ</td><td>Ω m</td><td><b>材料属性</b>，与 L、A 无关<br><span class="en">property of the material, independent of shape</span></td><td class="f">R = ρL/A</td></tr>
+<tr><td>电功率<br><span class="en">electrical power</span></td><td>P</td><td>watt (W) = J s⁻¹</td><td>单位时间转化的电能<br><span class="en">rate of energy transfer</span></td><td class="f">P = IV = I²R = V²/R</td></tr>
+<tr><td>电能<br><span class="en">electrical energy</span></td><td>W</td><td>joule (J)</td><td>电荷流过时转化的能量</td><td class="f">W = QV = Pt = I²Rt</td></tr>
+<tr><td>平均漂移速度<br><span class="en">mean drift velocity</span></td><td>v</td><td>m s⁻¹</td><td>载流子在电流方向上的平均速度<br><span class="en">average velocity of charge carriers along the wire</span></td><td class="f">I = nAvq</td></tr>
+<tr><td>载流子数密度<br><span class="en">number density</span></td><td>n</td><td>m⁻³</td><td>单位体积内的<b>自由电子数</b>（不是总数！）</td><td class="f">n = I /(Avq)</td></tr>
+<tr><td>内阻<br><span class="en">internal resistance</span></td><td>r</td><td>Ω</td><td>电源内部的电阻，造成"电压损失"</td><td class="f">r = (E − V)/I</td></tr>
+<tr><td>端电压<br><span class="en">terminal p.d.</span></td><td>V</td><td>V</td><td>电池两端实际电压<br><span class="en">V = E − Ir</span></td><td class="f">V = E − Ir = IR</td></tr>
+</table>
+</section>
+
+<!-- ============ 1 ============ -->
+<h2>1 · 必背定义（考纲原句 + 中文）Must-Know Definitions</h2>
+<section>
+<div class="box tip"><b>答题技巧</b>
+定义题（"Define …"）只写一个式子<b>不给分</b>，必须用文字说清"每单位电荷的能量转化"。万能句式：
+<br><b>PD：</b> "The energy transferred <u>from electrical</u> to other forms <u>per unit charge</u> when charge passes between two points."
+<br><b>EMF：</b> "The energy transferred <u>from other forms</u> to electrical <u>per unit charge</u> when charge passes through the source."</div>
+
+<table>
+<tr><th style="width:26%">术语 Term</th><th>定义 Definition (EN)</th><th>中文</th></tr>
+<tr><td>★ Electric current<br><span class="en">电流</span></td><td>The rate of flow of charge.</td><td>电荷的流动速率（单位时间通过的电荷量）。</td></tr>
+<tr><td>★ Charge quantisation<br><span class="en">电荷量子化</span></td><td>Charge can only exist in discrete amounts that are whole-number multiples of the elementary charge e.</td><td>电荷只能以元电荷 e 的整数倍存在。</td></tr>
+<tr><td>★ Potential difference<br><span class="en">电势差 / 电压</span></td><td>The energy transferred from electrical energy to other forms of energy per unit charge passing between two points.</td><td>单位电荷从一点移到另一点时，电能转化为其他形式能的量。</td></tr>
+<tr><td>★ Electromotive force<br><span class="en">电动势</span></td><td>The energy transferred from other forms of energy to electrical energy per unit charge passing through the source.</td><td>单位电荷通过电源时，其他形式能转化为电能的量。</td></tr>
+<tr><td>★ Resistance<br><span class="en">电阻</span></td><td>The ratio of the potential difference across a component to the current in it.</td><td>元件两端电压与通过它的电流之比。</td></tr>
+<tr><td>★ Resistivity<br><span class="en">电阻率</span></td><td>The resistance of a sample of the material of unit length and unit cross-sectional area (a property of the material).</td><td>单位长度、单位横截面积该材料样品的电阻；是材料本身的属性。</td></tr>
+<tr><td>★ Ohm's law<br><span class="en">欧姆定律</span></td><td>The current in a conductor is proportional to the potential difference across it, provided physical conditions (e.g. temperature) are constant.</td><td>在物理条件（如温度）不变时，导体中的电流与两端电压成正比。</td></tr>
+<tr><td>★ Internal resistance<br><span class="en">内阻</span></td><td>The resistance of the source (e.g. a cell) itself; it causes a potential difference to be "lost" inside the source when current flows.</td><td>电源自身的电阻；有电流时它会造成内部"电压损失"。</td></tr>
+<tr><td>★ Kirchhoff's first law<br><span class="en">基尔霍夫第一定律</span></td><td>The sum of the currents entering a junction equals the sum of the currents leaving it. (Consequence of <b>conservation of charge</b>.)</td><td>流入节点的电流之和等于流出节点电流之和（<b>电荷守恒</b>的必然结果）。</td></tr>
+<tr><td>★ Kirchhoff's second law<br><span class="en">基尔霍夫第二定律</span></td><td>Around any closed loop, the sum of the e.m.f.s equals the sum of the products of current and resistance. (Consequence of <b>conservation of energy</b>.)</td><td>沿任一闭合回路，e.m.f. 之和等于各段 IR 之和（<b>能量守恒</b>的必然结果）。</td></tr>
+<tr><td>★ Mean drift velocity<br><span class="en">平均漂移速度</span></td><td>The average velocity of the charge carriers along the conductor, caused by the electric field.</td><td>电场作用下载流子沿导体方向的平均速度。</td></tr>
+<tr><td>★ Number density n<br><span class="en">数密度</span></td><td>The number of charge carriers (free electrons) per unit volume.</td><td>单位体积内的自由电子数目（不是总数，也不是每单位长度）。</td></tr>
+<tr><td>★ The coulomb (C)</td><td>The charge passing a point when a current of 1 A flows for 1 s.</td><td>1 A 电流在 1 s 内通过某点的电荷量。</td></tr>
+<tr><td>★ The volt (V)</td><td>The potential difference between two points when 1 J of energy is transferred per 1 C of charge passing between them.</td><td>1 C 电荷经过两点时转化 1 J 能量所对应的电势差。</td></tr>
+<tr><td>★ The ohm (Ω)</td><td>The resistance of a component when a potential difference of 1 V produces a current of 1 A.</td><td>两端电压 1 V 时电流为 1 A 的元件的电阻。</td></tr>
+<tr><td>★ The watt (W)</td><td>The power when 1 J of energy is transferred per second.</td><td>每秒转化 1 J 能量时的功率。</td></tr>
+<tr><td>★ Null method (potentiometer)<br><span class="en">零示法 / 平衡法</span></td><td>The method of comparing p.d.s in which the galvanometer reads zero, so <b>no current is drawn from the cell under test</b> — hence its e.m.f. (not terminal p.d.) is measured.</td><td>调节到检流计读数为零的方法；此时被测电池不起电流，因此测得的是它的<b>电动势</b>而非端电压。</td></tr>
+</table>
+</section>
+
+<!-- ============ 2 ============ -->
+<h2>2 · 公式分组（含适用条件）Formula Groups with Conditions</h2>
+<section>
+
+<h3>2.1 电流与电荷 Current &amp; Charge</h3>
+<table>
+<tr><th>公式</th><th>英文说明</th><th>中文说明 / 使用条件</th></tr>
+<tr><td class="f">I = ΔQ/Δt</td><td>Current is the rate of flow of charge.</td><td>通用定义式；ΔQ 是 Δt 内通过某一截面的电荷。</td></tr>
+<tr><td class="f">Q = Ne</td><td>Total charge of N charge carriers.</td><td>N 必须是整数；电子带 −e。</td></tr>
+<tr><td class="f">I = nAvq</td><td>Current in terms of charge carriers.</td><td>金属中 q = e；v 是<b>平均漂移速度</b>；串联时 I 与粗细无关。</td></tr>
+<tr><td class="f">v = I/(nAq)</td><td>Mean drift velocity.</td><td>v ∝ 1/A ∝ 1/d²（导体变细 → 漂移更快）。</td></tr>
+</table>
+
+<h3>2.2 电压、电阻、功率 Voltage, Resistance &amp; Power</h3>
+<table>
+<tr><th>公式</th><th>英文说明</th><th>中文说明 / 使用条件</th></tr>
+<tr><td class="f">V = W/Q</td><td>p.d. = energy transferred per unit charge.</td><td>定义式，永远成立（对 p.d. 和 e.m.f. 都适用）。</td></tr>
+<tr><td class="f">R = V/I</td><td>Resistance is the ratio V : I.</td><td>定义式；对非线性元件也算"某点"的电阻。</td></tr>
+<tr><td class="f">V = IR</td><td>Ohm's law form.</td><td>只对欧姆元件（温度不变）成立；非欧姆元件要查 I–V 曲线。</td></tr>
+<tr><td class="f">R = ρL/A</td><td>Resistance in terms of resistivity.</td><td>A = πd²/4（<b>先除以 2 再平方</b>）；ρ 不随 L、A 改变。</td></tr>
+<tr><td class="f">ρ = RA/L</td><td>Resistivity from experiment.</td><td>单位 Ω m；实验里用 ρ = RA/L。</td></tr>
+<tr><td class="f">P = IV</td><td>Power = current × p.d.</td><td>通用。</td></tr>
+<tr><td class="f">P = I²R</td><td>Power dissipated in a resistor.</td><td><b>串联</b>比较功率用这个（I 相同 → P ∝ R）。</td></tr>
+<tr><td class="f">P = V²/R</td><td>Power in terms of p.d.</td><td><b>并联</b>比较功率用这个（V 相同 → P ∝ 1/R）。</td></tr>
+<tr><td class="f">W = QV = Pt</td><td>Energy transferred.</td><td>电费题常用 kWh（1 kWh = 3.6×10⁶ J）。</td></tr>
+</table>
+
+<h3>2.3 电阻连接 Resistor Combinations</h3>
+<table>
+<tr><th>公式</th><th>英文说明</th><th>中文说明</th></tr>
+<tr><td class="f">R_T = R₁ + R₂ + …</td><td>Resistors in series.</td><td>串联：电流相同，电压按电阻比例分配。</td></tr>
+<tr><td class="f">1/R_T = 1/R₁ + 1/R₂ + …</td><td>Resistors in parallel.</td><td>并联：电压相同，电流按电阻<b>反</b>比分配。</td></tr>
+<tr><td class="f">R_T = R/n</td><td>n identical resistors in parallel.</td><td>n 个相同电阻并联；两个相同就是 R/2。</td></tr>
+<tr><td class="f">R_T &lt; R_min</td><td>Parallel total is always less than the smallest.</td><td><b>验算神器</b>：并联总电阻一定小于最小的那个。</td></tr>
+<tr><td class="f">V_out = R₂/(R₁+R₂) · V_in</td><td>Potential divider.</td><td>分压器；R₂ 是"取电压"的那个电阻。</td></tr>
+</table>
+
+<h3>2.4 电源与电路定律 Sources &amp; Circuit Laws</h3>
+<table>
+<tr><th>公式</th><th>英文说明</th><th>中文说明</th></tr>
+<tr><td class="f">E = I(R + r)</td><td>Circuit with internal resistance.</td><td>整个电路的能量守恒式。</td></tr>
+<tr><td class="f">E = V + Ir</td><td>e.m.f. = terminal p.d. + lost volts.</td><td><b>lost volts = Ir</b>；端电压 V = IR。</td></tr>
+<tr><td class="f">I = E/(R + r)</td><td>Current from a real cell.</td><td>外阻 R 变小 → I 变大 → 端电压变小。</td></tr>
+<tr><td class="f">ΣI_in = ΣI_out</td><td>Kirchhoff's first law.</td><td>节点；守恒量 = <b>电荷 charge</b>。</td></tr>
+<tr><td class="f">ΣE = ΣIR</td><td>Kirchhoff's second law.</td><td>闭合回路；守恒量 = <b>能量 energy</b>。</td></tr>
+<tr><td class="f">E_x = (L_x/L_total)·V_wire</td><td>Potentiometer, uniform wire.</td><td>平衡（检流计为零）时；p.d. ∝ 长度。</td></tr>
+<tr><td class="f">E_x = E_std × (L_x/L_std)</td><td>Calibrated potentiometer.</td><td>用标准电池校准后测未知 e.m.f.。</td></tr>
+<tr><td class="f">E, r from two readings:<br>E = I₁(R₁+r) = I₂(R₂+r)</td><td>Two-point method.</td><td>联立解 r，再回代求 E。</td></tr>
+<tr><td class="f">V–I graph: intercept = E,<br>gradient = −r</td><td>Graphical determination of e.m.f. and internal resistance.</td><td>纵截距 = E，斜率大小 = r。</td></tr>
+</table>
+</section>
+
+<!-- ============ 3 ============ -->
+<h2>3 · 单位与量纲 Units &amp; Unit Checking</h2>
+<section>
+<div class="grid">
+<div>
+<table>
+<tr><th>导出单位</th><th>等价形式</th></tr>
+<tr><td class="f">1 V</td><td class="f">1 J C⁻¹ = 1 W A⁻¹</td></tr>
+<tr><td class="f">1 Ω</td><td class="f">1 V A⁻¹</td></tr>
+<tr><td class="f">1 W</td><td class="f">1 J s⁻¹ = 1 V A</td></tr>
+<tr><td class="f">1 C</td><td class="f">1 A s</td></tr>
+<tr><td class="f">1 F (farad)</td><td class="f">1 C V⁻¹</td></tr>
+<tr><td class="f">ρ 的单位</td><td class="f">Ω m</td></tr>
+</table>
+</div>
+<div class="box tip" style="margin-top:0">
+<b>单位自检 3 招</b>
+① <span class="f">I = nAvq</span>：m⁻³ · m² · m s⁻¹ · C = C s⁻¹ = A ✓<br>
+② <span class="f">R = ρL/A</span>：Ω m · m / m² = Ω ✓<br>
+③ <span class="f">P = I²R</span>：A² · Ω = A² · V A⁻¹ = V A = W ✓<br>
+<b>换算易错</b>：mm → m 是 ×10⁻³；mm² → m² 是 ×10⁻⁶；cm → m 是 ×10⁻²；μs → s 是 ×10⁻⁶；kWh → J 是 ×3.6×10⁶。
+</div>
+</div>
+</section>
+
+<!-- ============ 4 ============ -->
+<h2>4 · 物理量中英对照词汇表 Glossary</h2>
+<section>
+<div class="grid">
+<div>
+<table>
+<tr><th>English</th><th>中文</th></tr>
+<tr><td>charge / charge carrier</td><td>电荷 / 载流子</td></tr>
+<tr><td>current</td><td>电流</td></tr>
+<tr><td>conventional current</td><td>常规电流（正电荷流向）</td></tr>
+<tr><td>electron flow</td><td>电子流</td></tr>
+<tr><td>elementary charge</td><td>元电荷</td></tr>
+<tr><td>potential difference (p.d.)</td><td>电势差 / 电压</td></tr>
+<tr><td>electromotive force (e.m.f.)</td><td>电动势</td></tr>
+<tr><td>terminal p.d.</td><td>端电压</td></tr>
+<tr><td>lost volts</td><td>电压损失</td></tr>
+<tr><td>internal resistance</td><td>内阻</td></tr>
+<tr><td>resistance</td><td>电阻</td></tr>
+<tr><td>resistivity</td><td>电阻率</td></tr>
+<tr><td>cross-sectional area</td><td>横截面积</td></tr>
+<tr><td>mean drift velocity</td><td>平均漂移速度</td></tr>
+<tr><td>number density</td><td>（载流子）数密度</td></tr>
+<tr><td>I–V characteristic</td><td>伏安特性曲线</td></tr>
+<tr><td>ohmic / non-ohmic</td><td>欧姆的 / 非欧姆的</td></tr>
+<tr><td>filament lamp</td><td>白炽灯（灯丝）</td></tr>
+<tr><td>semiconductor diode</td><td>半导体二极管</td></tr>
+<tr><td>forward / reverse biased</td><td>正向 / 反向偏置</td></tr>
+<tr><td>light-dependent resistor (LDR)</td><td>光敏电阻</td></tr>
+<tr><td>thermistor (NTC)</td><td>热敏电阻（负温度系数）</td></tr>
+</table>
+</div>
+<div>
+<table>
+<tr><th>English</th><th>中文</th></tr>
+<tr><td>Kirchhoff's first/second law</td><td>基尔霍夫第一/第二定律</td></tr>
+<tr><td>junction / node</td><td>节点</td></tr>
+<tr><td>closed loop</td><td>闭合回路</td></tr>
+<tr><td>conservation of charge / energy</td><td>电荷守恒 / 能量守恒</td></tr>
+<tr><td>in series / in parallel</td><td>串联 / 并联</td></tr>
+<tr><td>potential divider</td><td>分压器</td></tr>
+<tr><td>potentiometer</td><td>电位计</td></tr>
+<tr><td>null method / balance point</td><td>零示法 / 平衡点</td></tr>
+<tr><td>galvanometer</td><td>检流计</td></tr>
+<tr><td>ammeter / voltmeter</td><td>电流表 / 电压表</td></tr>
+<tr><td>ideal ammeter (zero R)</td><td>理想电流表（电阻为零）</td></tr>
+<tr><td>ideal voltmeter (infinite R)</td><td>理想电压表（电阻无穷大）</td></tr>
+<tr><td>variable resistor / rheostat</td><td>可变电阻 / 变阻器</td></tr>
+<tr><td>output power</td><td>输出功率</td></tr>
+<tr><td>power dissipation</td><td>功率耗散</td></tr>
+<tr><td>electrical energy</td><td>电能</td></tr>
+<tr><td>kilowatt-hour (kWh)</td><td>千瓦时（度）</td></tr>
+<tr><td>precision / accuracy</td><td>精密度 / 准确度</td></tr>
+<tr><td>uncertainty</td><td>不确定度</td></tr>
+<tr><td>calibration</td><td>校准</td></tr>
+<tr><td>derived unit</td><td>导出单位</td></tr>
+<tr><td>base unit</td><td>基本单位</td></tr>
+</table>
+</div>
+</div>
+</section>
+
+<!-- ============ 5 ============ -->
+<h2>5 · 高频陷阱 Traps &amp; Exam Tips</h2>
+<section>
+<div class="box trap"><b>① 并联写成串联 / 忘记 R/n</b>
+两个相同电阻并联结果是 <b>R/2</b>，不是 2R。算完立刻检查：并联总电阻必须 <b>小于</b> 最小的那个电阻。</div>
+<div class="box trap"><b>② A = πd²/4，不是 πd²</b>
+直径 d 要先 ÷2 得半径。直径单位 mm → m 要 ×10⁻³，平方后是 ×10⁻⁶。</div>
+<div class="box trap"><b>③ n 的含义</b>
+n 是 <b>单位体积</b>（per unit volume）的载流子数，单位 m⁻³。常见错误选项会写"总数"或"每单位长度"。</div>
+<div class="box trap"><b>④ "1 C" vs "1 electron"</b>
+定义题里如果出现"1 electron"或"always"，基本都是错的。必须说 1 <b>coulomb</b> of charge。</div>
+<div class="box trap"><b>⑤ p.d. 与 e.m.f. 的能量方向</b>
+p.d.：electrical → other forms；e.m.f.：other forms → electrical。<b>方向写反就没分</b>。</div>
+<div class="box trap"><b>⑥ 串联/并联选哪个功率公式</b>
+串联（I 相同）→ 用 <b>P = I²R</b>；并联（V 相同）→ 用 <b>P = V²/R</b>。
+"额定值"只在额定电压下成立，端电压变了要用同一个 R 重算。</div>
+<div class="box trap"><b>⑦ 漂移速度 vs 信号速度</b>
+电子漂移速度约 10⁻⁴ m s⁻¹，而电场/信号建立速度接近光速。两者完全不同，别混。</div>
+<div class="box tip"><b>⑧ 定义题万能三步</b>
+写出符号式 → 用文字说明"每单位电荷" → 指明能量转化方向。三步齐了才拿满分。</div>
+<div class="box tip"><b>⑨ 内阻题的固定套路</b>
+外阻 ↓ ⇒ 总阻 ↓ ⇒ I ↑ ⇒ Ir ↑ ⇒ 端电压 V = E − Ir ↓；输出功率 P = I²R = E²R/(R+r)² ↓（r 不变时）。</div>
+<div class="box tip"><b>⑩ V–I 图与电位计</b>
+V–I 图：<b>纵截距 = E，斜率 = −r</b>。电位计：平衡时被测电池<b>无电流</b>，所以量的正是 e.m.f.，这是它比电压表更准的原因。</div>
+</section>
+
+<p class="small">配套材料：<b>AS物理_考前复习包_Ch8-11.html</b>（章节精讲 + 错题）· <b>9702_2025_P1_电学题目与答案对照.html</b>（2025 全年卷一电学真题 + mark scheme 答案）。</p>
+
+</main>
+</body>
+</html>
